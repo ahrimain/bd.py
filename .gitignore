@@ -1,3 +1,7 @@
 .ouput/
 src/__pycache__
 modules/
+pages/
+assets/
+
+*.bdp

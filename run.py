@@ -1,3 +1,8 @@
 from src import builder
 
-builder.build("index.bdp")
+print("building pages")
+builder.buildpages()
+print("building assets")
+builder.buildassets()
+print("building server")
+builder.buildserver()
