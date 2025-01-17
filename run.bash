@@ -20,6 +20,7 @@ fi
 
 echo "building"
 mkdir .build
+touch .build/assets
 touch .build/pages
 python3 run.py
 rm .build -r
