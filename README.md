@@ -2,5 +2,5 @@
 
 linux (requires wget)
 
-> wget https://github.com/ahrimain/braindead.py/raw/main/install.bash \
+> wget https://github.com/ahrimain/braindead.py/raw/main/installer/install.bash \
 > bash install.bash
