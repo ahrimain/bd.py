@@ -7,5 +7,5 @@ linux (requires wget)
 
 Windows (powershell)
 
-> wget https://github.com/ahrimain/bd.py/raw/main/installer/install.ps1 \
+> wget https://github.com/ahrimain/bd.py/raw/main/installer/install.ps1 -OutFile ./install.ps1 \
 > ./install.ps1
