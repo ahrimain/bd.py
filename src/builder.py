@@ -15,13 +15,18 @@ def build(filein, fileout):
     file = open(filein, "r")
     fileout = open(fileout, "w")
     for line in file:
+        isModule = False
         for module in modules:
             if "<"+module+" />" in line:
                 modsrc = open("./modules/"+module+".bdp", "r")
+                isModule = True
                 for modline in modsrc:
                     fileout.write(modline)
                 break
-        fileout.write(line)
+        if isModule == False:
+            fileout.write(line)
+        else:
+            fileout.write("\n")
         continue
     
     file.close()
